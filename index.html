@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CuriousEat</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CuriousEat</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">About</a></li>
+            <li><button id="auth-button">Sign Up / Log In</button></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="container">
+            <aside id="sidebar">
+                <h2>Ingredients by Nutrient</h2>
+                <ul id="ingredient-categories">
+                    <li><a href="#protein">Protein</a></li>
+                    <li><a href="#carbs">Carbohydrates</a></li>
+                    <li><a href="#fiber">Fiber</a></li>
+                    <!-- Add more nutrient categories as needed -->
+                </ul>
+                <div id="ingredient-list">
+                    <div id="protein" class="ingredient-category" style="display: none;">
+                        <ul>
+                            <li><a href="#">Chicken</a></li>
+                            <li><a href="#">Turkey</a></li>
+                            <li><a href="#">Pork</a></li>
+                            <li><a href="#">Beef</a></li>
+                            <li><a href="#">Tofu</a></li>
+                            <li><a href="#">Egg</a></li>
+                            <li><a href="#">Salmon</a></li>
+                            <!-- Add more protein-rich ingredients -->
+                        </ul>
+                    </div>
+                    <div id="carbs" class="ingredient-category" style="display: none;">
+                        <ul>
+                            <li><a href="#">Rice</a></li>
+                            <li><a href="#">Pasta</a></li>
+                            <li><a href="#">Bread</a></li>
+                            <li><a href="#">Potatoes</a></li>
+                            <li><a href="#">Sweet Potatoes</a></li>
+                        </ul>
+                    </div>
+                    <div id="fiber" class="ingredient-category" style="display: none;">
+                        <ul>
+                            <li><a href="#">Beans</a></li>
+                            <li><a href="#">Broccoli</a></li>
+                            <li><a href="#">Carrot</a></li>
+                            <li><a href="#">Cauliflower </a></li>
+                            <li><a href="#">Eggplant</a></li>
+                            <li><a href="#">Collard Green</a></li>
+                            <li><a href="#">Brussel Sprout</a></li>
+                            <li><a href="#">Cabbage</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </aside>
+            
+            <section id="input-section">
+                <h2>Enter Ingredients</h2>
+                <input type="text" id="ingredient-input" placeholder="Enter ingredients...">
+                <button id="generate-button">Generate Recipes</button>
+            </section>
+        </div>
+        <section id="recipe-section">
+            <h2>Generated Recipes</h2>
+            <ul id="recipe-list"></ul>
+        </section>
+
+
+    </main>
+    <footer>
+        <p>&copy; 2023 Recipe Generator</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

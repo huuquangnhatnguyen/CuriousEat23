@@ -1,0 +1,144 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #3498db;
+    padding: 10px 0;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+main {
+    max-width: 1500px;
+    flex-flow: column wrap;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(500vw - 30px);  
+}
+
+#sidebar {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    flex: 0 0 35%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+#input-section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+    flex: 1;
+    min-width: 0; /* Allow flex-grow to shrink the item below its min-width */
+}
+#ingredient-categories {
+    list-style-type: none;
+}
+
+#ingredient-categories li {
+    margin-bottom: 10px;
+}
+
+#ingredient-categories a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#ingredient-list {
+    list-style-type: none;
+}
+
+#ingredient-list li {
+    margin-bottom: 10px;
+}
+
+#ingredient-list a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+
+#input-section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    flex-grow: 1;
+    width: 70%;
+    min-width: 500px;
+    padding: 20px;
+}
+
+#ingredient-input {
+    width: 100%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#generate-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#recipe-section {
+    flex-grow: 1;
+    width: 50%; /* Adjust the width as needed */
+    padding: 20px;
+}
+
+#recipe-list {
+    list-style-type: none;
+}
+
+footer {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
